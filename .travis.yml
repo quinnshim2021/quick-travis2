@@ -1,0 +1,13 @@
+os: windows
+language: node_js
+node_js:
+  - "14.2.0"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm test
+  - npm run build
+after_success:
+  - npm install -g firebase-tools
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
