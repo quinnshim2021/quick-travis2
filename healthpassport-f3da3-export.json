@@ -1,0 +1,131 @@
+{
+  "Course" : {
+    "EECS394" : {
+      "Instructor" : "Christopher Riesbeck",
+      "Name" : "Agile Software Development",
+      "Roster" : [ "Emily Qiao", "Naeem Patel" ]
+    }
+  },
+  "Student" : {
+    "Anam Khan" : {
+      "Major" : "CS",
+      "Name" : "Anam Khan",
+      "classStanding" : "Graduate",
+      "netid" : "akc6310",
+      "record" : {
+        "05-11-2020" : {
+          "temp" : "97.9",
+          "url" : "url goes here"
+        },
+        "05-12-2020" : {
+          "temp" : "98.5",
+          "url" : "url goes here"
+        },
+        "5-17-2020" : {
+          "temp" : "100.9",
+          "url" : "url goes here"
+        },
+        "5-18-2020" : {
+          "temp" : "101",
+          "url" : "url goes here"
+        },
+        "5-19-2020" : {
+          "temp" : "105",
+          "url" : "url goes here"
+        }
+      }
+    },
+    "Emily Qiao" : {
+      "Major" : "CS",
+      "Name" : "Emily Qiao",
+      "classStanding" : "Graduate",
+      "netid" : "xqv6932",
+      "record" : {
+        "05-11-2020" : {
+          "temp" : "100",
+          "url" : "url goes here"
+        },
+        "05-12-2020" : {
+          "temp" : "98.5",
+          "url" : "url goes here"
+        },
+        "5-17-2020" : {
+          "temp" : "98.9",
+          "url" : "url goes here"
+        },
+        "5-18-2020" : {
+          "temp" : "98",
+          "url" : "url goes here"
+        },
+        "5-19-2020" : {
+          "temp" : "105",
+          "url" : "url goes here"
+        }
+      }
+    },
+    "Naeem Patel" : {
+      "Major" : "CS",
+      "Name" : "Naeem Patel",
+      "classStanding" : "Undergraduate",
+      "netid" : "npv7128",
+      "record" : {
+        "05-12-2020" : {
+          "temp" : "96",
+          "url" : "url goes here"
+        },
+        "05-13-2020" : {
+          "temp" : "98.7",
+          "url" : "url goes here"
+        },
+        "5-19-2020" : {
+          "temp" : "97.0",
+          "url" : "url goes here"
+        }
+      }
+    },
+    "Quinn Shim" : {
+      "Major" : "CS",
+      "Name" : "Quinn Shim",
+      "classStanding" : "Undergraduate",
+      "netid" : "qrs7059",
+      "record" : {
+        "05-15-2020" : {
+          "temp" : "98.6",
+          "url" : "url goes here"
+        },
+        "05-17-2020" : {
+          "temp" : "98.5",
+          "url" : "url goes here"
+        }
+      }
+    },
+    "Yiwei Zhang" : {
+      "Major" : "CS",
+      "Name" : "Yiwei Zhang",
+      "classStanding" : "Graduate",
+      "netid" : "yzh1927",
+      "record" : {
+        "05-12-2020" : {
+          "temp" : "98",
+          "url" : "url goes here"
+        },
+        "05-13-2020" : {
+          "temp" : "99",
+          "url" : "url goes here"
+        }
+      }
+    },
+    "Zhen Huang" : {
+      "Major" : "CS",
+      "Name" : "Zhen Huang",
+      "classStanding" : "Graduate",
+      "netid" : "zhn1979",
+      "record" : {
+        "5-19-2020" : {
+          "temp" : "103",
+          "url" : "url goes here"
+        }
+      }
+    }
+  }
+}

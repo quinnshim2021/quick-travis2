@@ -1,0 +1,53 @@
+{
+  "Student": {
+  	"xqv6932":{
+		"Name": "Emily Qiao",
+		"netid": "xqv6932",
+	    "classStanding": "Graduate",
+	    "Major": "CS",
+	    "record": {
+	    			"05-11-2020": 97,
+	     		    "05-12-2020": 96
+	     		  }
+  		},
+
+"npv7128":{
+		"Name": "Naeem Patel",
+		"netid": "npv7128",
+	    "classStanding": "Undergraduate",
+	    "Major": "CS",
+	    "record": {
+	    			"05-12-2020": 98,
+	     		    "05-13-2020": 96
+	     		  }
+  	},
+
+"yzh1927":{
+		"Name": "Yiwei Zhang",
+		"netid": "yzh1927",
+	    "classStanding": "Graduate",
+	    "Major": "CS",
+	    "record": {
+	    		    "05-12-2020": 98,
+	     		    "05-13-2020": 96
+	     		  }
+	  },
+"qrs7059":{
+		"Name": "Quinn Shim",
+		"netid": "qrs7059",
+	    "classStanding": "Undergraduate",
+	    "Major": "CS",
+	    "record": {
+	    		    "05-15-2020": 98,
+	     		    "05-17-2020": 102
+	     		  }
+  	}
+  },
+  "Course": {
+    "EECS394": {
+    	"Name":"Agile Software Development",
+    	"Roster":["xqv6932","npv7128"],
+    	"Instructor":"Christopher Riesbeck"
+    }
+  }
+}
