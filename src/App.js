@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Firebase from './firebase'
 import 'firebase/database';
@@ -29,7 +28,7 @@ function App() {
     }
     db.on('value', handleData, error => alert(error));
     return () => { db.off('value', handleData); };
-  }, []);
+  }, [db]);
 
   /*
     gets temperature (trust me, this is the best way to do it rn b/c it gets the most recent temp)
