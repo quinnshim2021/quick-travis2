@@ -1,12 +1,13 @@
 import firebase from 'firebase/app';
 var firebaseConfig = {
-    apiKey: "AIzaSyDaQgYwd4U3X38xPBHKmOaf6bHTw20PDrU",
-    authDomain: "healthpassport-f3da3.firebaseapp.com",
-    databaseURL: "https://healthpassport-f3da3.firebaseio.com",
-    projectId: "healthpassport-f3da3",
-    storageBucket: "healthpassport-f3da3.appspot.com",
-    messagingSenderId: "846956265889",
-    appId: "1:846956265889:web:8517a3e88af0965d4c8be0"
-  };
+  apiKey: "AIzaSyCR88mqefmxxtlXegYI6YhMB13xFTU6dAE",
+  authDomain: "quick-travis2.firebaseapp.com",
+  databaseURL: "https://quick-travis2.firebaseio.com",
+  projectId: "quick-travis2",
+  storageBucket: "quick-travis2.appspot.com",
+  messagingSenderId: "504046538903",
+  appId: "1:504046538903:web:122456b73fd2b65060d9d2",
+  measurementId: "G-5K2DPSX6J9"
+};
 const Firebase = firebase.initializeApp(firebaseConfig);
 export default Firebase;
