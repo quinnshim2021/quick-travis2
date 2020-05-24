@@ -34,7 +34,7 @@ const Table = ({course, students}) => {
 
     return(
         <div id="table-container">
-            <button id="update_healthy" onClick={() => heatlhyTemp === 96 ? setHealthy(90) : setHealthy(96)}>
+            <button id="update_healthy" onClick={() => heatlhyTemp === 96 ? setHealthy(100) : setHealthy(96)}> {/* should break tests */}
                 Change Healthy Temp
             </button>            
             <caption>{course["Name"]}</caption>
