@@ -38,7 +38,7 @@ const Table = ({course, students}) => {
                 Change Healthy Temp from {heatlhyTemp}
             </button>            
             <caption>{course["Name"]}</caption>
-            <table className="course-table table-bordered">
+            <table className="course-table table-bordered" data-testid={course["Name"]}>
             <thead>
                 <th scope="col">Student Name</th>
                 <th scope="col">Latest Temperature</th>
@@ -48,14 +48,14 @@ const Table = ({course, students}) => {
                     {course["Roster"].map((s) => 
                         Number(getTemp(s)[0]) > heatlhyTemp ?
                             <tr>
-                                <td class="unhealthy">{s}</td>
+                                <td class="unhealthy" key={s}>{s}</td>
                                 <Tooltip title="temperature not within healthy range" aria-label="temperature not within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>
                                 <td>{getTemp(s)[1]}</td> 
                             </tr>
                         
                         :
                             <tr>
-                                <td class="healthy">{s}</td>
+                                <td class="healthy" key={s}>{s}</td>
                                 <Tooltip title="temperature within healthy range" aria-label="temperature within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>
                                 <td>{getTemp(s)[1]}</td> 
                             </tr>
