@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
-import Firebase from './firebase'
+// import Firebase from './firebase'
 import 'firebase/database';
 import Table from "./components/Table/Table";
 import data from './components/data.json';
