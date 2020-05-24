@@ -48,14 +48,14 @@ const Table = ({course, students}) => {
                     {course["Roster"].map((s) => 
                         Number(getTemp(s)[0]) > heatlhyTemp ?
                             <tr>
-                                <td class="unhealthy" key={s}>{s}</td>
+                                <td class="unhealthy" key={s}>Text not net id</td>
                                 <Tooltip title="temperature not within healthy range" aria-label="temperature not within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>
                                 <td>{getTemp(s)[1]}</td> 
                             </tr>
                         
                         :
                             <tr>
-                                <td class="healthy" key={s}>{s}</td>
+                                <td class="healthy" key={s}>Text not net id</td>
                                 <Tooltip title="temperature within healthy range" aria-label="temperature within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>
                                 <td>{getTemp(s)[1]}</td> 
                             </tr>
