@@ -57,3 +57,11 @@ tr, td, th {
 th {
   font-size: 30px;
 }
+
+.healthy {
+  background-color: green;
+}
+
+.unhealthy {
+  background-color: red;
+}

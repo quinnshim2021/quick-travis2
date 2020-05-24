@@ -34,8 +34,8 @@ const Table = ({course, students}) => {
 
     return(
         <div id="table-container">
-            <button onClick={() => heatlhyTemp === 96 ? setHealthy(90) : setHealthy(96)}>
-                Change Healthy Temp from {heatlhyTemp}
+            <button id="update_healthy" onClick={() => heatlhyTemp === 96 ? setHealthy(90) : setHealthy(96)}>
+                Change Healthy Temp
             </button>            
             <caption>{course["Name"]}</caption>
             <table className="course-table table-bordered" data-testid={course["Name"]}>
@@ -48,15 +48,15 @@ const Table = ({course, students}) => {
                     {course["Roster"].map((s) => 
                         Number(getTemp(s)[0]) > heatlhyTemp ?
                             <tr>
-                                <td class="unhealthy" key={s}>{s}</td>
-                                <Tooltip title="temperature not within healthy range" aria-label="temperature not within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>
+                                <td class="unhealthy" data-testid="unhealthy" key={s}>{s}</td>
+                                <Tooltip data-testid="tooltip" title="temperature not within healthy range" aria-label="temperature not within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>
                                 <td>{getTemp(s)[1]}</td> 
                             </tr>
                         
                         :
                             <tr>
-                                <td class="healthy" key={s}>{s}</td>
-                                <Tooltip title="temperature within healthy range" aria-label="temperature within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>
+                                <td class="healthy" data-testid="healthy" key={s}>{s}</td>
+                                <Tooltip data-testid="tooltip" title="temperature within healthy range" aria-label="temperature within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>
                                 <td>{getTemp(s)[1]}</td> 
                             </tr>
                     )}
