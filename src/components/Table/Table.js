@@ -38,7 +38,7 @@ const Table = ({course, students}) => {
                 Change Healthy Temp
             </button>            
             <caption>{course["Name"]}</caption>
-            <table className="course-table table-bordered" data-testid={course["Name"]}>
+            <table data-cy="table" className="course-table table-bordered" data-testid={course["Name"]}>
             <thead>
                 <th scope="col">Student Name</th>
                 <th scope="col">Latest Temperature</th>
