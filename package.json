@@ -12,6 +12,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "cypress:open": "cypress open",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,6 +34,7 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^9.5.0"
+    "@testing-library/react": "^9.5.0",
+    "cypress": "^4.7.0"
   }
 }
