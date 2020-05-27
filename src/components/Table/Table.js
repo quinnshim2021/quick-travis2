@@ -4,6 +4,7 @@ import { Tooltip } from "@material-ui/core";
 const Table = ({course, students}) => {
 
     const [heatlhyTemp, setHealthy] = useState(96);
+    const [onlyUnhealthy, setOnlyUnhealthy] = useState(false);
     const getTemp = s => { 
 
         let keys = Object.keys(students)
@@ -36,7 +37,10 @@ const Table = ({course, students}) => {
         <div id="table-container">
             <button id="update_healthy" onClick={() => heatlhyTemp === 96 ? setHealthy(90) : setHealthy(96)}>
                 Change Healthy Temp
-            </button>            
+            </button>
+            <button onClick={() => setOnlyUnhealthy(!onlyUnhealthy)}>
+                {onlyUnhealthy ? "Show All Students" : "Show Unhealthy Students"}
+            </button>             
             <caption>{course["Name"]}</caption>
             <table data-cy="table" className="course-table table-bordered" data-testid={course["Name"]}>
             <thead>
@@ -53,7 +57,7 @@ const Table = ({course, students}) => {
                                 <td>{getTemp(s)[1]}</td> 
                             </tr>
                         
-                        :
+                        : onlyUnhealthy ? console.log("") :
                             <tr>
                                 <td class="healthy" data-testid="healthy" key={s}>{s}</td>
                                 <Tooltip data-testid="tooltip" title="temperature within healthy range" aria-label="temperature within healthy range"><td>{getTemp(s)[0]}</td></Tooltip>

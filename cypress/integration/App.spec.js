@@ -10,4 +10,10 @@ describe ('Test App', () => {
         cy.get('[data-cy=table]').should('contain', 'Latest Temperature');
         cy.get('[data-cy=table]').should('contain', 'Date of Temperature');
       });
+
+    //   it('shows Winter courses when Winter is selected', () => {
+    //     cy.visit ('/');
+    //     cy.get('[data-cy=Winter]').click();
+    //     cy.get('[data-cy=course]').should('contain' ,'Winter');
+    //   });
   });
