@@ -35,10 +35,10 @@ const Table = ({course, students}) => {
 
     return(
         <div id="table-container">
-            <button id="update_healthy" onClick={() => heatlhyTemp === 96 ? setHealthy(90) : setHealthy(96)}>
+            <button data-cy="change" id="update_healthy" onClick={() => heatlhyTemp === 96 ? setHealthy(90) : setHealthy(96)}>
                 Change Healthy Temp
             </button>
-            <button onClick={() => setOnlyUnhealthy(!onlyUnhealthy)}>
+            <button data-cy="unhealthy" onClick={() => setOnlyUnhealthy(!onlyUnhealthy)}>
                 {onlyUnhealthy ? "Show All Students" : "Show Unhealthy Students"}
             </button>             
             <caption>{course["Name"]}</caption>
