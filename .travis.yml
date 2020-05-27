@@ -1,7 +1,6 @@
-os: windows
 language: node_js
 node_js:
-  - "14.2.0"
+  - "stable"
 addons:
   apt:
     packages:
@@ -13,9 +12,5 @@ cache:
   # folder with Cypress binary
   - ~/.cache
 script:
-  - npm test
-  - npm run build
   - npm run test:ci
-after_success:
-  - npm install -g firebase-tools
-  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
+  - npm run build
